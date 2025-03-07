@@ -3,105 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>Welcome to Moonlight Reads!</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
             display: flex;
-            height: 100vh;
         }
-        .sidebar {
-            width: 250px;
-            background: #333;
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
             color: white;
-            padding: 20px;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        .categories {
-            list-style: none;
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
-        .categories li {
-            padding: 10px;
-            border-bottom: 1px solid #555;
+
+        .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: white;
+            display: none; 
+        }
+
+        .login-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
             cursor: pointer;
+            width: 100px; /* Ensures enough space */
+            white-space: nowrap; /* Prevents text from breaking */
+            display: inline-block; /* Ensures correct rendering */
+            text-align: center;
         }
-        .categories li:hover {
-            background: #555;
-        }
-        .main-content {
-            flex: 1;
+
+        .sidebar {
+            position: fixed;
             display: flex;
             flex-direction: column;
-            padding: 20px;
-        }
-        .search-box {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 20px;
-        }
-        .search-box input {
-            padding: 8px;
+            top: 50px; 
             width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            height: 100%;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
         }
-        .book-container {
+
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .main {
+            margin-left: 220px;
+            margin-top: 60px;
+            padding: 20px;
             display: flex;
-            justify-content: space-between;
-        }
-        .book {
-            width: 22%;
-            padding: 10px;
-            border: 1px solid #ddd;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
             text-align: center;
-            border-radius: 5px;
-            background: white;
+            width: calc(100% - 220px);
+            text-align: center;                
         }
-        .book img {
-            width: 100%;
-            border-radius: 5px;
+
+        .book-list {
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .book-item {
+            width: 200px;
+            height: 200px;
+            background: lightgray;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-    <div class="sidebar">
-        <ul class="categories">
-            <li><strong>Category</strong></li>
-            <li>Fiction</li>
-            <li>Non-fiction</li>
-            <li>Science</li>
-            <li>History</li>
-            <li>Technology</li>
-        </ul>
+    <div class="navbar">
+        <div>
+            <img src="Moon(1).png" alt="Moon" width="40" height="40">
+            <a href="#">Home</a>
+            <a href="library.html">Library</a>
+        </div>
+        <div class="right">
+            <a href="login.html" class="login-btn">LOGIN</a>
+            <img class="user-icon" src="data:image/png;base64,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" alt="User Icon">
+        </div>
     </div>
 
-    <div class="main-content">
-        <div class="search-box">
-            <input type="text" placeholder="Search books...">
-        </div>
-        
-        <div class="book-container">
-            <div class="book">
-                <img src="images/book1.jpg" alt="Book 1" width="200" height="250">
-                <p>Book Title 1</p>
-            </div>
-            <div class="book">
-                <img src="images/book2.jpg" alt="Book 2" width="200" height="250">
-                <p>Book Title 2</p>
-            </div>
-            <div class="book">
-                <img src="images/book3.jpg" alt="Book 3" width="200" height="250">
-                <p>Book Title 3</p>
-            </div>
-            <div class="book">
-                <img src="https://via.placeholder.com/150" alt="Book 4" width="200" height="250">
-                <p>Book Title 4</p>
-            </div>
+    <div class="sidebar">
+        <a href="#">Latest Book</a>
+        <a href="#">Recommended Book</a>
+        <a href="#">Popular Post</a>
+    </div>
+
+    <div class="main">
+        <h3>Popular Books</h3>
+        <div class="book-list">
+            <div class="book-item"><img src="images/book1.jpg" alt="Book 1" width="200" height="200"></div>
+            <div class="book-item"><img src="images/book2.jpg" alt="Book 1" width="200" height="200"></div>
+            <div class="book-item"><img src="images/book3.jpg" alt="Book 1" width="200" height="200"></div>
         </div>
     </div>
 
