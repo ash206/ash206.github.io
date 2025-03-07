@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        .categories {
+            list-style: none;
+        }
+        .categories li {
+            padding: 10px;
+            border-bottom: 1px solid #555;
+            cursor: pointer;
+        }
+        .categories li:hover {
+            background: #555;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .search-box {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .search-box input {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .book-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .book {
+            width: 22%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 5px;
+            background: white;
+        }
+        .book img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <ul class="categories">
+            <li><strong>Category</strong></li>
+            <li>Fiction</li>
+            <li>Non-fiction</li>
+            <li>Science</li>
+            <li>History</li>
+            <li>Technology</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="search-box">
+            <input type="text" placeholder="Search books...">
+        </div>
+        
+        <div class="book-container">
+            <div class="book">
+                <img src="images/book1.jpg" alt="Book 1" width="200" height="250">
+                <p>Book Title 1</p>
+            </div>
+            <div class="book">
+                <img src="images/book2.jpg" alt="Book 2" width="200" height="250">
+                <p>Book Title 2</p>
+            </div>
+            <div class="book">
+                <img src="images/book3.jpg" alt="Book 3" width="200" height="250">
+                <p>Book Title 3</p>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/150" alt="Book 4" width="200" height="250">
+                <p>Book Title 4</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
