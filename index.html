@@ -65,7 +65,8 @@
 
         .sidebar {
             position: fixed;
-            left: 0;
+            display: flex;
+            flex-direction: column;
             top: 50px; 
             width: 200px;
             height: 100%;
@@ -91,22 +92,19 @@
             margin-left: 220px;
             margin-top: 60px;
             padding: 20px;
+            justify-content: center;
         }
 
         .book-list {
             display: flex;
-            flex-wrap: wrap;
             gap: 20px;
-            flex-direction: column；
+            flex-direction: row;
         }
 
         .book-item {
             width: 30%;
             height: 200px;
             background: lightgray;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 18px;
         }
     </style>
@@ -126,14 +124,11 @@
 
     <div class="sidebar">
         <a href="#">Latest Book</a>
-        <a href="#">Popular Book</a>
         <a href="#">Recommended Book</a>
         <a href="#">Popular Post</a>
     </div>
 
     <div class="main">
-        <h2>Welcome to 857 Book Forum</h2>
-        <p>Here you can find all kinds of books, read reviews, and share your thoughts.</p>
         <h3>Popular Books</h3>
         <div class="book-list">
             <div class="book-item"><img src="images/book1.jpg" alt="Book 1" width="200" height="200"></div>
