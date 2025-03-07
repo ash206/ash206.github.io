@@ -3,36 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>book forum</title>
+    <title>857bookforum</title>
     <style>
-        :root {
-            --icon-size: 50px;
-        }
-        .navbar {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex; 
             justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        .navbar img{
-            width: calc(var(--icon-size) * 1.5);
-            height: var(--icon-size);
-            border: 2px solid black;
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navbar .right {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .user-icon {
+            width: 17px;
+            height: 17px;
             border-radius: 50%;
-            padding-top: 1.5%;
-            padding-bottom: 1.5%;    
+            background-color: white;
+            border: 2px solid #333;
+            padding: 8px;
+            display: inline-block;
+            text-align: center;
         }
-        #user {
-            margin-left: auto;
+
+        .sidebar {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top: 50px; 
+            width: 200px;
+            height: 100%;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
         }
-            
+
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .main {
+            margin-left: 220px;
+            margin-top: 60px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            width: calc(100% - 220px);
+            text-align: center;                
+        }
+
+        .book-list {
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .book-item {
+            width: 200px;
+            height: 200px;
+            background: lightgray;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
+
     <div class="navbar">
         <div>
-            <img id="home" src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Home-Icon-by-Kanggraphic-312x208.jpg" href="index.html"></img>
-            <img id="library" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY1NDvbkgmEwxsGQA2e7osOYtYyxaJkj4TA&s" href="library.html"></img>
-            <img id="user" src="https://www.creativefabrica.com/wp-content/uploads/2021/04/24/Account-user-icon-Graphics-11285624-1-580x386.jpg" href="login.html"></img>
+            <a href="#">Home</a>
+            <a href="library.html">Library</a>
+        </div>
+        <div class="right">
+            <a href="user-profile.jpg"><img class="user-icon" src="images/user_icon.jpg" alt="User Icon"></a>
         </div>
     </div>
+
+    <div class="sidebar">
+        <a href="#">Latest Book</a>
+        <a href="#">Recommended Book</a>
+        <a href="#">Popular Post</a>
+    </div>
+
+    <div class="main">
+        <h3>Popular Books</h3>
+        <div class="book-list">
+            <div class="book-item"><img src="images/book1.jpg" alt="Book 1" width="200" height="200"></div>
+            <div class="book-item"><img src="images/book2.jpg" alt="Book 1" width="200" height="200"></div>
+            <div class="book-item"><img src="images/book3.jpg" alt="Book 1" width="200" height="200"></div>
+        </div>
+    </div>
+
 </body>
 </html>
