@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .book-container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+        }
+        .book-cover {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .book-details {
+            flex: 1;
+        }
+        .book-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .book-author, .book-published {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .book-description {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        .review-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .review-section h3 {
+            margin-bottom: 10px;
+        }
+        .review {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-container">
+        <img src="images/book1.jpg" alt="First Frost" class="book-cover">
+        <div class="book-details">
+            <h1 class="book-title">First Frost</h1>
+            <p class="book-author">Author: Zhu Yi</p>
+            <p class="book-published">Published Date: January 1, 2021</p>
+            <p class="book-description">It was by pure chance that Wen Yifan became housemates with Sang Yan, whom she had rejected during high school.<br>Normally, they lived their lives separately, as if they were two strangers living under the same roof.<br>But the peace was disrupted one morning.<br>The night before, Wen Yifan was still sleeping in her room, but she found herself waking in Sang Yan’s bed the next day.<br>Aware that she sleepwalked from time to time, Wen Yifan could only apologize and put it away as her fault.<br> However, when the situation repeated again and again, she tried to suggest locking his door before he heads to sleep.<br>Sang Yan dismissed the idea, saying, “You’d just pick the lock.”<br>Wen Yifan tried her best to keep her composure.<br> “Why in the world would I be able to do that?”<br>“Well…” Sang Yan lifted his eyes and drawled, “is there anything you wouldn’t do to climb onto my bed?”<br>After an awkward pause, Wen Yifan smiled. “OK, then go ahead and try.”<br>Now that caught Sang Yan by surprise.</p>
+        </div>
+    </div>
+
+    <div class="review-section">
+        <h3>Reviews</h3>
+        <div class="review"><strong>Emily:</strong> ⭐⭐⭐⭐⭐ "Absolutely loved it!"</div>
+        <div class="review"><strong>Michael:</strong> ⭐⭐⭐⭐ "Great read, highly recommended."</div>
+        <div class="review"><strong>Sarah:</strong> ⭐⭐⭐⭐ "Engaging and well-written!"</div>
+    </div>
+
+</body>
+</html>
