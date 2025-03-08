@@ -40,7 +40,7 @@ body {
 }
 
 .hero-overlay {
-    background: url('Reads.jpg') no-repeat center center;
+    background: url('images/Reads.jpg') no-repeat center center;
     background-size: cover;
     background-position-y: 40%; 
     width: 100%;
