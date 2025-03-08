@@ -119,3 +119,18 @@ label {
         opacity: 1;
     }
 }
+
+.sign-out-btn {
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign-out-btn:hover {
+    background-color: darkred;
+}
