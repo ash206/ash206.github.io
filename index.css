@@ -1,0 +1,30 @@
+nav{
+    background-color: #0b8ad4;
+    padding: 10px;
+}
+
+body{
+    margin: 3%
+}
+
+@media (min-width: 0px) {
+    nav {
+        height: 5%;
+    }
+}
+
+@media (min-width: 576px) {
+    nav {
+        height: 6%;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        height: 8%;
+    }
+    
+    .container {
+        margin-top: 5%;
+    }
+}
