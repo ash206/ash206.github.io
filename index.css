@@ -18,14 +18,14 @@ body{
     margin: 3%
 }
 
- .book-card {
-        max-width: 200px; 
-        margin: auto; 
-        }
+.book-card {
+    max-width: 200px; /* Adjust the card size */
+    margin: auto; /* Center the cards */
+}
 
-        .book-card img {
-         max-height: 250px; 
-        }
+.book-card img {
+    max-height: 250px; /* Reduce image height */
+}
 
 @media (min-width: 0px) {
     nav {
