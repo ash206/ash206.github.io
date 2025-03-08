@@ -18,6 +18,15 @@ body{
     margin: 3%
 }
 
+ .book-card {
+        max-width: 200px; 
+        margin: auto; 
+        }
+
+        .book-card img {
+         max-height: 250px; 
+        }
+
 @media (min-width: 0px) {
     nav {
         height: 5%;
