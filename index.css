@@ -8,6 +8,12 @@
             margin-right: 15px;
         }
 
+.user-icon {
+            width: 40px;  /* Fix user icon size */
+            height: 40px;
+            border-radius: 50%;
+        }
+
 body{
     margin: 3%
 }
@@ -28,6 +34,7 @@ body{
     nav {
         height: 8%;
     }
+}
     
 .container {
     margin-top: 5%;
