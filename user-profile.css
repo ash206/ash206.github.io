@@ -58,7 +58,7 @@ body {
     font-size: 14px;
 }
 
-.edit-btn {
+.edit-btn, .sign-out-btn {
     margin-top: 15px;
     padding: 10px 25px;
     border: none;
@@ -69,13 +69,18 @@ body {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.edit-btn:hover {
+.edit-btn:hover, .sign-out-btn:hover {
     background: #0056b3;
     transform: scale(1.05);
 }
 
-.edit-btn:focus {
+.edit-btn:focus, .sign-out-btn:focus {
     outline: none;
+}
+
+.sign-out-btn a {
+    text-decoration: none;
+    color: white;
 }
 
 input[type="file"] {
@@ -118,19 +123,4 @@ label {
     100% {
         opacity: 1;
     }
-}
-
-.sign-out-btn {
-    margin-top: 15px;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sign-out-btn:hover {
-    background-color: darkred;
 }
