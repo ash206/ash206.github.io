@@ -55,12 +55,23 @@
             color: white;
         }
       
-      .search-container {
+        .search-container {
             display: flex;
             justify-content: flex-end;
             margin-top: 60px; /* Space below navbar */
             padding-right: 20px;
         }
+
+        .search-container .btn-primary {
+            background-color: #FFD700;
+            color: #191970;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
         .search-container input {
             width: 250px;
         }
@@ -148,12 +159,19 @@
         margin: auto; /* Center the books */
         }
 
-        .book-card {
-        max-width: 100%; /* Allow it to scale */
+        .search-container {
+        padding-right: 10px;
         }
 
         .search-container input {
-            width: 180px; /* Reduce width on tablets */
+        max-width: 180px;
+        font-size: 14px;
+        padding: 6px;
+        }
+
+        .search-container .btn-primary {
+        padding: 6px 12px;
+        font-size: 14px;
         }
     }
 
@@ -179,10 +197,23 @@
         max-width: 280px; /* Adjust max width */
         }
 
+        .search-container {
+        padding-right: 5px;
+        }
+
+        .input-group {
+        max-width: 220px;
+        }
+
         .search-container input {
-        width: 140px; /* Reduce width for mobile */
-        font-size: 14px; /* Reduce font size for better fit */
-        padding: 5px; /* Reduce padding */
+        max-width: 140px;
+        font-size: 12px;
+        padding: 5px;
+        }
+
+        .search-container .btn-primary {
+        font-size: 12px;
+        padding: 5px 8px;
         }
     }
     </style>
@@ -201,8 +232,16 @@
     </nav>
 
     <div class="container search-container">
-        <input type="text"  placeholder="Search books...">
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group">
+                 <input type="text"  placeholder="Search books...">
+                 <button class="btn btn-primary" type="button">Search</button>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <nav class="sidebar">
         <h5 class="text-center">Genres</h5>
