@@ -42,7 +42,7 @@ input {
     color: #191970;
 }
 
-button {
+.button {
     background-color: #FFD700;
     color: #191970;
     padding: 10px 20px;
@@ -54,7 +54,7 @@ button {
     margin-top: 8px;
 }
 
-button:hover {
+.button:hover {
     background-color: #E6C200;
 }
 
