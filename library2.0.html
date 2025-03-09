@@ -54,7 +54,7 @@
             background-color: #f08a5d;
             color: white;
         }
-
+      
         .search-container {
             display: flex;
             justify-content: flex-end;
@@ -78,33 +78,22 @@
 
         /* NAVBAR FIX */
         .navbar {
-            background-color: #0f3460 !important; /* Dark navy */
-            height: 56px;
-            padding: 10px;
-        }
-
-        .navbar {
-            background-color: #0f3460 !important; /* Dark navy */
-            height: 56px;
-            padding: 10px;
+            position: fixed;
+            top: 0;
+            background-color: #0f3460 !important; 
+            width: 100%;
         }
 
         .navbar a {
             color: white;
-            text-decoration: none;
             font-weight: bold;
-            margin-right: 15px;
+            text-decoration: none;
         }
 
        .navbar a:hover {
-           color: #f9c74f; /* Golden moonlight effect */
+           color: #f9c74f; 
         }
 
-        .user-icon {
-            width: 40px;  /* Fix user icon size */
-            height: 40px;
-            border-radius: 50%;
-        }
 
         /* SIDEBAR */
         .sidebar {
@@ -168,7 +157,7 @@
         padding-right: 10px;
         }
 
-       .search-container input {
+        .search-container input {
         max-width: 180px;
         font-size: 14px;
         padding: 6px;
@@ -219,9 +208,41 @@
         .search-container .btn-primary {
         font-size: 12px;
         padding: 5px 8px;
-         }
+        }
     }
 
+        @media (min-width: 0px) {
+            nav {
+                height: 53px;
+            }
+            nav a{
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+
+        @media (min-width: 470px) {
+            nav {
+                height: 58px;
+            }
+            nav a{
+                margin-right: 18px;
+                margin-left: 18px;
+                font-size: large;
+            }
+        }
+
+        @media (min-width: 760px) {
+            nav {
+                height: 66px;
+                padding: 10px;
+            }
+            nav a{
+                margin-right: 30px;
+                margin-left: 30px;
+                font-size: larger
+            }
+        }
     </style>
 </head>
 <body>
@@ -250,19 +271,20 @@
         </div>
     </div>
 
+
     <nav class="sidebar">
         <h5 class="text-center">Genres</h5>
         <hr>
         <ul class="nav flex-column text-center">
-            <li class="nav-item"><a href="#" class="nav-link">Fiction</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Non-fiction</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Science</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">History</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Technology</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Romance</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Mystery</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Horror</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Fantasy</a></li>
+            <li class="nav-item"><a href="fiction2.0.html" class="nav-link">Fiction</a></li>
+            <li class="nav-item"><a href="non-fiction2.0.html" class="nav-link">Non-fiction</a></li>
+            <li class="nav-item"><a href="science2.0.html" class="nav-link">Science</a></li>
+            <li class="nav-item"><a href="history2.0.html" class="nav-link">History</a></li>
+            <li class="nav-item"><a href="technology2.0.html" class="nav-link">Technology</a></li>
+            <li class="nav-item"><a href="romance2.0.html" class="nav-link">Romance</a></li>
+            <li class="nav-item"><a href="mystery2.0.html" class="nav-link">Mystery</a></li>
+            <li class="nav-item"><a href="horror2.0.html" class="nav-link">Horror</a></li>
+            <li class="nav-item"><a href="fantasy2.0.html" class="nav-link">Fantasy</a></li>
         </ul>
     </nav>
 
@@ -273,9 +295,9 @@
                 <div class="card book-card">
                     <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
                     <div class="card-body text-center">
-                        <h6 class="card-title">Book Title 1</h6>
+                        <h6 class="card-title">First Frost</h6>
                         <button class="btn btn-sm btn-outline-primary">
-                            <a href="bookdetails2.0.html">View Details</a>
+                            <a href="bookdetails.html">View Details</a>
                         </button>
                     </div>
                 </div>
@@ -284,7 +306,7 @@
                 <div class="card book-card">
                     <img src="images/book2.jpg" class="card-img-top" alt="Book 2">
                     <div class="card-body text-center">
-                        <h6 class="card-title">Book Title 2</h6>
+                        <h6 class="card-title">The Dream Hotel</h6>
                         <button class="btn btn-sm btn-outline-primary">View Details</button>
                     </div>
                 </div>
@@ -293,7 +315,52 @@
                 <div class="card book-card">
                     <img src="images/book3.jpg" class="card-img-top" alt="Book 3">
                     <div class="card-body text-center">
-                        <h6 class="card-title">Book Title 3</h6>
+                        <h6 class="card-title">The Sacred Well Murders</h6>
+                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card book-card">
+                    <img src="images/book4.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Wings of Starlight</h6>
+                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card book-card">
+                    <img src="images/book5.jpg" class="card-img-top" alt="Book 5">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Count My Lies</h6>
+                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card book-card">
+                    <img src="images/book6.jpg" class="card-img-top" alt="Book 6">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">The Paris Express</h6>
+                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card book-card">
+                    <img src="images/book7.jpg" class="card-img-top" alt="Book 7">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">First-Time Caller</h6>
+                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card book-card">
+                    <img src="images/book8.jpg" class="card-img-top" alt="Book 8">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">We All Live Here</h6>
                         <button class="btn btn-sm btn-outline-primary">View Details</button>
                     </div>
                 </div>
