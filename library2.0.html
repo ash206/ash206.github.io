@@ -123,6 +123,74 @@
             margin-left: 260px;
             padding: 20px;
         }
+
+        @media (max-width: 768px) {
+        .sidebar {
+        width: 180px; /* Reduce width on tablets */
+        }
+
+        .sidebar ul {
+        padding-left: 10px; /* Align text to the left */
+        }
+
+        .sidebar ul li {
+        text-align: left;
+        }
+
+        .content-wrapper {
+        margin-left: 180px; /* Adjust for sidebar */
+        }
+
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center books */
+        }
+
+        .col-md-4, .col-lg-3 {
+        width: 100%; /* Full width on mobile */
+        max-width: 300px; /* Limit max size */
+        margin: auto; /* Center the books */
+        }
+
+        .book-card {
+        max-width: 100%; /* Allow it to scale */
+        }
+
+        .search-container input {
+            width: 180px; /* Reduce width on tablets */
+        }
+    }
+
+    /* Mobile View (Width <= 480px) */
+        @media (max-width: 480px) {
+        .sidebar {
+        width: 150px; /* Even smaller width for mobile */
+        }
+        .sidebar ul {
+        padding-left: 10px; /* Align text to the left */
+        }
+
+        .sidebar ul li {
+        text-align: left;
+        }
+
+        .content-wrapper {
+        margin-left: 150px; /* Adjust for smaller sidebar */
+        }
+
+        .col-md-4, .col-lg-3 {
+        width: 90%; /* Make book cards take more space */
+        max-width: 280px; /* Adjust max width */
+        }
+
+        .search-container input {
+        width: 140px; /* Reduce width for mobile */
+        font-size: 14px; /* Reduce font size for better fit */
+        padding: 5px; /* Reduce padding */
+        }
+    }
+
     </style>
 </head>
 <body>
