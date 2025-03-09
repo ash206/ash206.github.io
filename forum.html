@@ -41,7 +41,7 @@
         .post-footer {
             display: flex;
             justify-content: space-between;
-            align-item: center;
+            align-items: center;
             padding-top: 10px;
             border-top: 1px solid #ddd;
         }
@@ -58,12 +58,19 @@
             display: flex;
             justify-content: flex-end;
             margin-top: 60px; 
-            padding-right: 20px;
             padding-top: 16px;
         }
-        .search-container input {
-            width: 250px;
+
+        .search-container .btn-primary {
+            background-color: #FFD700;
+            color: #191970;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
         }
+
         .book-title {
             font-size: 0.9rem;
             font-style: italic;
@@ -71,7 +78,7 @@
         }
 
         .post-box form button{
-             background-color: #FFD700;
+            background-color: #FFD700;
             color: #191970;
             padding: 10px 20px;
             text-decoration: none;
@@ -80,7 +87,6 @@
             cursor: pointer;
             border: none;
         }
-
     </style>
 </head>
 <body>
@@ -97,14 +103,18 @@
     </nav>
 
     <div class="container search-container">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search posts...">
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search posts..." required>
+                    <button class="btn btn-primary" type="button">Search</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="forum-container mt-4">
         <h3 class="text-center">Start a Discussion</h3>
-
         <div class="post-box">
             <form>
                 <div class="mb-3">
@@ -121,7 +131,7 @@
 
         <div class="post-box">
             <h5>Cheng Bin</h5>
-            <p class="book-title"> 📒 First Frost</p>
+            <p class="book-title">📒 First Frost</p>
             <p>The story of "First Frost" is good and heartwarming. Absolutely worth a watch!</p>
             <div class="post-footer">
                 <button>👍 Like</button>
