@@ -130,12 +130,9 @@ h3{
         margin-left: 18px;
         font-size: large;
     }
-    h3{
-        text-align: left;
-    }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 767px) {
     nav {
         height: 66px;
         padding: 10px;
@@ -150,7 +147,7 @@ h3{
         text-align: left;
     }
 }
-
+    
 @media (min-width: 1024px) {
     .hero h1{
         margin-top: 3%;
