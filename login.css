@@ -1,10 +1,13 @@
 body {
     background-image: url(images/moonlight.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center center; /* Keeps the image centered */
     color: white;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin: 0;
+    height: 100vh; /* Make sure the body takes the full height of the viewport */
 }
 
 hr {
@@ -12,7 +15,7 @@ hr {
 }
 
 .container {
-    background: rgb(10, 1, 54,0.8);
+    background: rgb(10, 1, 54, 0.8);
     padding: 10px;
     border-radius: 10px;
     margin-top: 5%;
@@ -20,15 +23,15 @@ hr {
     margin-bottom: 5%;
 }
 
-h1 { 
-    color:#E6C200;
+h1 {
+    color: #E6C200;
 }
 
-h4{
+h4 {
     margin-bottom: 22px;
 }
 
-p{
+p {
     margin-top: 20px;
     justify-content: center;
 }
