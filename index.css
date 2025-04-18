@@ -41,7 +41,7 @@ body {
     background: url('images/Reads.jpg') no-repeat center center;
     background-size: cover;
     background-position-y: 40%; 
-    width: 100%;
+    right: 0;
     position: absolute;
     padding-bottom: 7%;
     line-height: 2;
