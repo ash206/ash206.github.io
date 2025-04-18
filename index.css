@@ -2,6 +2,7 @@ body {
     background-color: #1a1a2e; 
     color: #e0e0e0; 
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
