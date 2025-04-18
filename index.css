@@ -9,7 +9,6 @@ body {
     position: fixed;
     top: 0;
     background-color: #0f3460 !important; 
-    width: 100%;
 }
 
 .navbar a {
@@ -41,7 +40,7 @@ body {
     background: url('images/Reads.jpg') no-repeat center center;
     background-size: cover;
     background-position-y: 40%; 
-    right: 0;
+    width: 100%;
     position: absolute;
     padding-bottom: 7%;
     line-height: 2;
